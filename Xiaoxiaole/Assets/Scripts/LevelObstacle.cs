@@ -55,6 +55,7 @@ public class LevelObstacle : Level {
         if (leftStep == 0)  //游戏结束
         {
             grid.GameOver();
+			Debug.Log ("GameOver");
             if (isWin())
                 GameWin();  //在OnPieceCleared输出一遍，这里再输出一遍
             else

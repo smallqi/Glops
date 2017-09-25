@@ -110,6 +110,7 @@ public class HUD : MonoBehaviour {
     }
     public void OnGameLose()
     {
+		Debug.Log ("HUD gameover");
         gameEnd.ShowLose();
     }
 }

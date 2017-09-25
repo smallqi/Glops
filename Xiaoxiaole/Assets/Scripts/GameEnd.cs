@@ -30,7 +30,7 @@ public class GameEnd : MonoBehaviour {
     {
         end.SetActive(true);
         score.SetActive(false);
-
+		Debug.Log ("GameEnd gameover");
         //播放动画
         Animator animator = GetComponent<Animator>();
         if (animator)

@@ -29,11 +29,13 @@ public class LevelMoves : Level {
     public override void OnMove()
     {
         currentStepLeft--;
+		Debug.Log ("remain：" + currentStepLeft);
         hud.SetRemain(currentStepLeft);
 
         if(currentStepLeft == 0)  //所有步数用完，游戏结束
         {
             grid.GameOver();
+			Debug.Log ("levelMoves gameover");
             if (currentScore >= targetScore)
                 GameWin();
             else

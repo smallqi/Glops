@@ -75,9 +75,12 @@ public class Level : MonoBehaviour {
         while (grid.IsFill)
             yield return 0;
         //填充完毕则显示
-        if (isGameWin)
-            hud.OnGameWin(currentScore);
-        else
-            hud.OnGameLose();
+		if (isGameWin)
+			hud.OnGameWin (currentScore);
+		else {
+			Debug.Log ("level gameover");
+			hud.OnGameLose();
+		}
+           
     }
 }
