@@ -121,7 +121,7 @@ public class Grid : MonoBehaviour {
 
         //yield return new WaitForSeconds(dropSpeed);
         //ClearAllMatch();
-        //isFill = false;
+        isFill = false;
     }
     //一个一个填充
     bool FillStep()
